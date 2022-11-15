@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.center{
+    max-width: 100vw;
+    padding: 1% 7%;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(29, 28, 28, 0.9);
+}
+
+/* Logo */
+
+header h2 a{
+    font-size: 22px;
+    float: left;
+    font-weight: 700;
+    border: 3px solid white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+/* Menu */
+
+header nav{
+    float: right;
+    margin-top: 3px;
+}
+
+header nav a{
+    margin-right: 25px;
+    font-weight: 500;
+    color: #9f9d9d;
+    transition: 0.3s;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+
+/* Sobre */
+
+main .sobre{
+    margin-top: 50px;  
+    text-align: center;
+}
+
+main .sobre h1{
+    align-items: center;
+    color: #1d1c1ce6;
+    font-weight: 700;
+}
+
+main .sobre p {
+    margin-top: 15px;
+    margin-bottom: 45px;
+    padding: 0 20%;
+}
+
+
+/* Card */
+
+section{
+    width: 100%;
+    display: flex;
+    padding: 0 15px;
+    gap: 4%; 
+}
+
+section .card img{
+    width: 100%;
+    height: 10%;
+}
+
+section .card{
+    /* position: relative; */
+    background-color: transparent;
+    width: 100%;
+    transition: 0.3s;
+}
+
+section .card:hover{
+    box-shadow: 1px 1px 20px 5px rgb(247, 149, 70, 0.5);
+}
+
+section .card .container{
+    padding: 10px 50px;
+    margin-top: -6px;
+    box-shadow: 0 0 5px 5px rgb(18, 18, 18, 0.15);
+    text-align: justify;
+    
+}
+
+section .card .container span{
+    color: #f79546;
+    font-size: 12px;
+}
+
+section .card .container h3{
+    color: #1d1c1ce6;
+    font-size: 25px;
+}
+
+section .card .container p{
+    margin-top: 10px;
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* Botão */
+
+main .btn{
+    margin-top: 45px;
+    text-align: center;
+}
+
+main .btn button{
+    height: 50px;
+    background-color: #f79546;
+    padding: 10px 30px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+main .btn button:hover{
+    background-color: #1d1c1ce6;
+    font-size: 16px;
+}
+
+/* Footer */
+
+
+footer{
+    background-color: #1d1c1ce6;
+}
+
+footer .center{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+footer .center .boxs{
+    min-height: 150px;
+    padding: 20px;
+    color: white;
+    
+}
+
+footer .boxs h3{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #f79546;
+    width: 100%;
+}
+
+footer .boxs ul li{
+    list-style: none;
+}
+
+footer .boxs ul li a{
+    color: #9f9d9d;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+footer .boxs:nth-child(1),footer .boxs:nth-child(2),footer .boxs:nth-child(3){
+    width: 20%;
+}
+
+footer .boxs ul li a:hover{
+    color: white;
+}
+
+footer .boxs:nth-child(4){
+    text-align: justify;
+    width: 40%;
+    font-size: 14px;
+}
+
+footer .boxs:nth-child(5){
+   width: 40%;
+   text-align: center;
+}
+
+footer .boxs .sociais{
+    display: flex;
+    justify-content: center;
+}
+
+footer .boxs .sociais .social{
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+footer .sociais .social:hover{
+    background-color: #f79546;
+}
+
+footer .sociais .social a{
+    color: #f79546;    
+    font-size: 30px;
+    transform: .5s linear;
+}
+
+footer .sociais .social:hover a{
+    color: #fff;
+}
+
+footer .autor{
+    text-align: center;
+}
+
+footer .autor span a{
+    color:  #9f9d9d;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+footer .autor span a:hover{
+    color: white;
+}
+
+footer .autor span a:visited{
+    text-decoration: none;
+}
+
+
+
+/* Responsivo */
+
+@media screen and (max-width: 768px){
+    .center{
+        max-width: 100vw;
+        padding: 3% 3%;
+        
+    }
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    /* Menu-Responsivo */
+
+    header{
+        height: auto;
+    }
+    
+    header h2 a{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    header nav a, header nav{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;  
+    }
+
+    header nav {
+        background: rgba(29, 28, 28, 0.2);
+    }
+
+    /* Sobre-Responsivo */
+    
+    main .sobre p {
+        padding: 0;
+        text-align: justify;
+    }
+   
+    /* Card-Responsivo */
+
+    section{
+        width: 100%;
+        display: inline-block;
+        
+    }
+
+    section .card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Botão-Responsivo */
+
+    main .btn{
+        margin-top: 5px;
+    }
+
+    main .btn button{
+        height: 80px;
+        background-color: #f79546;
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    main .btn button:hover{
+        background-color: #1d1c1ce6;
+        font-size: 20px;
+    }
+
+    /* Footer-Responsivo */
+
+    footer .center{
+        display: inline-block;
+        padding: 0 100px;
+    }
+    footer .boxs:nth-child(1){
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .boxs:nth-child(2){
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .boxs:nth-child(3){
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .boxs:nth-child(4){
+    width: 100%;
+    text-align: center;
+    }
+
+    footer .boxs:nth-child(5){
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .boxs p{
+        text-align: justify;
+    }
+}
